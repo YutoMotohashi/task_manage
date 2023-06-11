@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f2f2f2;
+}
+
+#sidebar {
+  width: 30%;
+  height: 100vh;
+  overflow: auto;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2efdc;
+}
+
+.node {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.node.selected {
+  background-color: #c9c3c3;
+}
+
+.child-list {
+  padding-left: 20px;
+}
+
+#content {
+  width: 70%;
+  height: 100vh;
+  float: right;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 5px 10px;
+}
+
+input[type="range"] {
+  width: 80%;
+}
+
+span#progressValue {
+  display: inline-block;
+  width: 15%;
+  text-align: right;
+}

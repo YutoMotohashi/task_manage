@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "progress-management"
+version = "0.1.0"
+description = ""
+authors = ["Yuto Motohashi <ymotohashi@ethz.ch>"]
+readme = "README.md"
+packages = [
+    {include = "task_manage"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flask = "^2.3.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.2"
+numpy = "^1.24.3"
+python-box = "^7.0.1"
+ipykernel = "^6.23.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

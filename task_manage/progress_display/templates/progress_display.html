@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Progress Report</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar"></div>
+    <div id="content">
+        <form id="nodeForm">
+            <label for="number">Number:</label>
+            <input type="text" id="number" readonly>
+            <br>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <br>
+            <label for="progress">Progress:</label>
+            <input type="range" min="0" max="100" id="progress" readonly>
+            <span id="progressValue">0%</span>
+            <br>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" rows="5"></textarea>
+            <br>
+            <label for="category">Category:</label>
+            <input type="text" id="category" readonly>
+            <br>
+            <label for="summary">Summary:</label>
+            <textarea id="summary" rows="10"></textarea>
+            <br>
+            <label for="todo">Todo:</label>
+            <textarea id="todo" rows="10"></textarea>
+            <br>
+        </form>
+        <button id="saveBtn">Save</button>
+        <button id="cancelBtn">Cancel</button>
+        <button id="addChildBtn">Add Child</button> <!-- Add this new button -->
+        <label for="newChildName">New Child Name:</label>
+        <input type="text" id="newChildName">
+        <label for="newChildNumber">New Child Number:</label>
+        <input type="text" id="newChildNumber">
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
